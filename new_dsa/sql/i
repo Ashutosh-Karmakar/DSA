@@ -1,0 +1,21 @@
+create table Ashu(
+    name varchar(20) NOT NULL,
+    age INT NOT NULL
+);
+
+create table cat{
+    name VARCHAR(200) NOT NULL,
+    age INT DEFAULT 0
+};
+
+create table orders{
+    orderID INT,
+    OrdreNUm INT NOT NULL,
+    persionID INT,
+    primary key(orderID),
+    foreign key(persionID) references persons(persionID)
+};
+
+
+select emp_id,(select count(*) from COMMITS
+                GROUP BY is_buggy having )

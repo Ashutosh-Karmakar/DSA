@@ -1,0 +1,10 @@
+{
+    "name": "Ashu Ad Blocker",
+    "version": "1.0",
+    "description": "My first ad blocker",
+    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"], 
+    "background": {
+        "scripts": ["block.js"]
+    },
+    "manifest_version": 2
+}

@@ -1,0 +1,18 @@
+f = open("ashu.txt")
+g = open("converted.txt",'w')
+lines = f.readlines()
+# l = "var blocklist = ["
+# g.writelines(l)
+for line in lines:
+    line = line.replace(","," ")
+    line = line.replace("\"*://*","")
+    line = line.replace("/*\"","")
+    
+    g.writelines(line)
+
+l = "]"
+g.writelines(l)
+f.close()
+g.close()
+
+"*://*.zzz.onion.pet/*"
